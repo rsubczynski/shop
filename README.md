@@ -1,6 +1,8 @@
-# Oshop
+# Oshop ![alt text](https://travis-ci.org/rsubczynski/shop.svg?branch=master)
 
-![alt text](https://travis-ci.org/rsubczynski/shop.svg?branch=master)
+
+
+[App Link](https://oshop-5d9e6.firebaseapp.com/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
 
