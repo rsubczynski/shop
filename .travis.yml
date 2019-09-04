@@ -10,8 +10,8 @@ before_script:
 
 script:
   - npm install
-  - npm run build
-  
+  - npm run build --prod
+
 deploy:
   skip_cleanup: true
   provider: firebase
