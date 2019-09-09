@@ -15,11 +15,10 @@ export class ProductService {
     return this.db.list('/products').push(product);
   }
 
-  getAll() {
+  getAll(): Observable<Product[]> {
     return this.db.list('/products').snapshotChanges().pipe(
-      map(changes => {
-        return changes.map(c =>
-          ({ key: c.payload.key, ...c.payload.val() }));
+      map(actions => {
+        return actions.map(action => ({ key: action.key, value: action.payload.val() }) as Product);
       }));
   }
 
